@@ -12,4 +12,14 @@ window.addEventListener('load',function(){
 			flag = 0;
 		}
 	})
+	
+	window.addEventListener("touchmove",function(event) {
+	        if(event.scale !== 1) {
+	            event.preventDefault();
+	        }
+	    }, 
+	    {
+	        passive: false
+	    }
+	);
 })
