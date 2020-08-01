@@ -1,0 +1,75 @@
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1596270008235'); /* IE9 */
+  src: url('iconfont.eot?t=1596270008235#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+  url('iconfont.woff?t=1596270008235') format('woff'),
+  url('iconfont.ttf?t=1596270008235') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1596270008235#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+	max-width: 1080px;
+	min-width: 320px;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    top:0;
+    z-index: -1; 
+    position: absolute;
+}
+
+.content img {
+    display: block;
+    outline: none;
+    border:0;
+    height: 100%;
+    width: 100%;
+}
+.font i{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 50px;
+	font-family: 'iconfont';
+	color: #FFFFFF;
+	z-index: 1;
+	animation: quan 2s linear infinite;
+}
+@keyframes quan{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.open a{
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translate(-50%);
+	color: red;
+	font-size: 50px;
+	font-family: 'iconfont';
+}
+.open span{
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translate(-50%);
+	color: red;
+	font-size: 14px;
+}
