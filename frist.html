@@ -5,8 +5,46 @@
 		<meta name="viewport" content="width=device-width, user-scalab=no,
 		initial-scale=1.0,maximun-scale=1.0,minmun=1.0" />
 		<title>主界面</title>
+		<!-- 引入我们的css文件 -->
+		<link rel="stylesheet" href="css/first.css" />
+		<!-- 引入swiper css文件 -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<!-- 引入swiper js文件 -->
+		<script src="js/swiper-bundle.min.js"></script>		
+		<!-- 引入本页css，js文件 -->		
+		<script src="js/first.js"></script>
+		
 	</head>
 	<body>
-		
+		<div class="first">
+			<!-- Swiper -->
+		  <div class="swiper-first">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide" style="background-image:url(images/Swiper1.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(images/Swiper2.jpeg)"></div>
+		      <div class="swiper-slide" style="background-image:url(images/Swiper3.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(images/Swiper4.jpg)"></div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pag"></div>
+		  </div>
+		</div>
+		<!-- Swiper -->
+		<div class="two">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>Slide 1</p>
+					</div>
+					<div class="swiper-slide">
+						<p>Slide 2</p>
+					</div>
+					<div class="swiper-slide">
+						<p>Slide 3</p>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
 	</body>
 </html>
