@@ -10,41 +10,79 @@
 		<!-- 引入swiper css文件 -->
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 		<!-- 引入swiper js文件 -->
-		<script src="js/swiper-bundle.min.js"></script>		
-		<!-- 引入本页css，js文件 -->		
+		<script src="js/swiper-bundle.min.js"></script>
+		<!-- 引入jquery文件 -->
+		<script src="js/jquery.js"></script>
+		<!-- 引入本页css，js文件 -->
 		<script src="js/first.js"></script>
-		
 	</head>
 	<body>
 		<div class="first">
-			<!-- Swiper -->
-		  <div class="swiper-first">
+		 <div class="swiper-container gallery-top">
 		    <div class="swiper-wrapper">
-		      <div class="swiper-slide" style="background-image:url(images/Swiper1.jpg)"></div>
-		      <div class="swiper-slide" style="background-image:url(images/Swiper2.jpeg)"></div>
-		      <div class="swiper-slide" style="background-image:url(images/Swiper3.jpg)"></div>
-		      <div class="swiper-slide" style="background-image:url(images/Swiper4.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(images/jun1.jpeg)"></div>
+		      <div class="swiper-slide" style="background-image:url(images/jun2.jpeg)"></div>
+		      <div class="swiper-slide" style="background-image:url(images/jun3.jpeg)"></div>
+		      <div class="swiper-slide" style="background-image:url(images/jun4.jpeg)"></div>
+			  <div class="swiper-slide" style="background-image:url(images/jun5.jpeg)"></div>
+			  <div class="swiper-slide" style="background-image:url(images/jun6.jpeg)"></div>
 		    </div>
-		    <!-- Add Pagination -->
-		    <div class="swiper-pag"></div>
+		    <!-- Add Arrows -->
+		    <div class="swiper-button-next swiper-button-white"></div>
+		    <div class="swiper-button-prev swiper-button-white"></div>
 		  </div>
-		</div>
-		<!-- Swiper -->
-		<div class="two">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<p>Slide 1</p>
-					</div>
-					<div class="swiper-slide">
-						<p>Slide 2</p>
-					</div>
-					<div class="swiper-slide">
-						<p>Slide 3</p>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</div>
+		  <div class="swiper-container gallery-thumbs">
+		    <div class="swiper-wrapper">
+		    <div class="swiper-slide" style="background-image:url(images/jun1.jpeg)"></div>
+		    <div class="swiper-slide" style="background-image:url(images/jun2.jpeg)"></div>
+		    <div class="swiper-slide" style="background-image:url(images/jun3.jpeg)"></div>
+		    <div class="swiper-slide" style="background-image:url(images/jun4.jpeg)"></div>
+		    <div class="swiper-slide" style="background-image:url(images/jun5.jpeg)"></div>
+		    <div class="swiper-slide" style="background-image:url(images/jun6.jpeg)"></div>
+		    </div>
+		  </div>
+		  </div>
+		  
+		  <div class="two">
+			    <!-- Swiper -->
+			    <div class="swiper-con">
+			    
+			      <div class="swiper-wra">
+			      <div class="refresh">释放刷新</div>
+			        <div class="swiper-s">看今朝辉煌，忆峥嵘岁月</div>
+			        <div class="swiper-s">身后是和平，面前是战争</div>
+			        <div class="swiper-s">在你们守护中，感恩并幸福着</div>
+			        <div class="swiper-s">初心不改，方见大国盛景</div>
+			        <div class="swiper-s">强军砺剑中国梦</div>
+			        <div class="swiper-s">军魂筑盛世，丹青照汗心</div>
+			        <div class="swiper-s">平淡幸福源于长久守护</div>
+			        <div class="swiper-s">不忘初心，使命必达</div>
+			        <div class="swiper-s">炽热深情，倾心守护</div>
+			        <div class="swiper-s">你负责安定家园，我负责美好家园</div>
+			        <div class="swiper-s">铁血丹心，忠国不渝</div>
+			        <div class="swiper-s">铁军精神，一脉相承</div>
+			        <div class="swiper-s">一腔热血，守卫四季，致敬最可爱的人</div>
+			        <div class="swiper-s">盛世年华，皆因一份执着守护</div>
+			        <div class="swiper-s">和平，执守心间</div>
+			        <div class="swiper-s">我们用生命写下的弘章，一如那嫣红的朝阳</div>
+			        <div class="swiper-s">强军逐梦，守望美好</div>
+			        <div class="swiper-s">.最可爱的人常驻心间</div>
+			        <div class="swiper-s">国家安全，因为你的文武双全</div>
+			        <div class="swiper-s">没有啦，拜拜</div>
+			        
+			      </div>
+			      <div class="swiper-scrollbar"></div>
+			    </div>
+		  </div>
+		  <script>
+			  $(function(){
+				  console.log($('.two div'));
+				  $('.two div').click(function(){
+					  $(this).css('background','#5555ff').siblings().css('background','');
+					  $(this).css('color','#aa0000').siblings().css('color','#000000');
+					  $(this).stop().fadeTo(1000,1).siblings().stop().fadeTo(500,0.5);
+				  })
+			  })
+		  </script>
 	</body>
 </html>

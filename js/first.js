@@ -1,53 +1,37 @@
-window.addEventListener('load',function(){
-	  var swiper = new Swiper('.swiper-container',{
-			direction : 'vertical',
-			followFinger : false,
-			speed:800,
-			mousewheel: true,
-			pagination : {
-				el:'.swiper-pagination',
-			},
-			on:{
-				init:function(swiper){
-			        slide=this.slides.eq(0);
-				    slide.addClass('ani-slide');
-			    },
-				transitionStart: function(){
-				    for(i=0;i<this.slides.length;i++){
-				    	slide=this.slides.eq(i);
-				        slide.removeClass('ani-slide');
-					}
-			    },
-				transitionEnd: function(){
-					slide=this.slides.eq(this.activeIndex);
-				    slide.addClass('ani-slide');
-					
-			    },
-			}
-	    });
-		
-		    var swiper = new Swiper('.swiper-first', {
-		      effect: 'cube',
-		      grabCursor: true,
-		      cubeEffect: {
-		        shadow: true,
-		        slideShadows: true,
-		        shadowOffset: 20,
-		        shadowScale: 0.94,
-		      },
-		      pagination: {
-		        el: '.swiper-pag',
-		      },
-		    });
-			
-			
-			window.addEventListener("touchmove",function(event) {
-			        if(event.scale !== 1) {
-			            event.preventDefault();
-			        }
-			    }, 
-			    {
-			        passive: false
-			    }
-			);
+window.addEventListener('load', function() {
+	var galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 4,
+		loop: true,
+		freeMode: true,
+		loopedSlides: 5, //looped slides should be the same
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+	});
+	var galleryTop = new Swiper('.gallery-top', {
+		spaceBetween: 10,
+		loop: true,
+		loopedSlides: 5, //looped slides should be the same
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		thumbs: {
+			swiper: galleryThumbs,
+		},
+	});
+	
+	
+
+
+
+
+
+	window.addEventListener("touchmove", function(event) {
+		if (event.scale !== 1) {
+			event.preventDefault();
+		}
+	}, {
+		passive: false
+	});
 })
